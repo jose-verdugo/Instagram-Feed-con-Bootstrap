@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <div>
+          <i class="bi bi-instagram"></i>
+          <a class="navbar-brand">Instagram</a>
+        </div>
+        <div class="dropdown">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Create a new post
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Caption:
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-light mt-2"
+                    data-bs-dismiss="modal">
+                    <i class="bi bi-camera-fill"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-light mt-2"
+                    data-bs-dismiss="modal">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul
+      class="nav nav-pills mb-3 d-flex justify-content-center"
+      id="pills-tab"
+      role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active bg-white text-secondary link-primary"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true">
+          <i class="bi bi-grid-3x3 pe-2"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link bg-white text-secondary link-primary"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false">
+          <i class="bi bi-square-fill ps-2"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <div class="row">
+          <div class="col-4 my-2" >
+            <img src="img/gato.jpeg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/guadalupe.jpg" class="card-img"  style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/sagrada familia.jpg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 my-2">
+            <img src="img/oceanografic.jpg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/islandia.jpeg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/coliseo.jpg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 my-2">
+            <img src="img/alhambra.jpg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/eagles.jpeg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+          <div class="col-4 my-2">
+            <img src="img/eiffel.jpg" class="card-img" style="height: 100%" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+        tabindex="0">
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2 class="fs-3 ">My crazy cat</h2>
+            <span>08/21</span>
+          </div>
+          <img src="img/gato.jpeg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              “Cuenta la leyenda que hace ya mucho tiempo atrás, el Sol decidió que quería participar de la vida en la Tierra. Para ello pidió ayuda a la Luna, para que cubriera su ausencia con el fin de que los humanos no se percatasen de que el astro rey ya no estaba en su lugar. La Luna aceptó y tomó la posición del sol de manera lenta pero inexorable, de manera que el Sol deseoso de vivir las experiencias de un mundo que sentía lejano, tomo forma de uno de los animales en los que mejor pasaría inadvertido y que tanto le fascinaba. Eligió una gata negra.
+
+              Y así paso el tiempo, el Sol vivió con intensidad aquellos días en la tierra hasta que la Luna, cansada de esperar su regreso decidió retirarse. El Sol tuvo que salir rápido del cuerpo de la gata negra a ocupar su lugar en el cielo, pero en su rápida huida, miles de rayos de luminosos y dorados colores, cubrieron y quedaron atrapados en la mágica piel de la gata negra. Desde entonces las hijas de aquella gata llevan el recuerdo de los rayos y destellos dorados que el Sol olvidó en su madre, así como su temperamento y sabiduría”.
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Monasterio de Guadalupe</h2>
+            <span>09/21</span>
+          </div>
+          <img src="img/guadalupe.jpg" alt="Monasterio de Santa María de Guadalupe" />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>214 Likes</b></p>
+            <p class="card-text">
+              El Real Monasterio de Santa Marñia de Guadalupe (Cáceres) es una verdadera joya artística reconocida por la Unesco en la que el desbordante mudéjar trasciende y marida magistralmente con el gótico, el renacimiento y el barroco
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Sagrada Familia</h2>
+            <span>10/21</span>
+          </div>
+          <img src="img/sagrada familia.jpg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>198 Likes</b></p>
+            <p class="card-text">
+              La Sagrada Familia es el icono indiscutible de Barcelona y la obra maestra de Antoni Gaudí. Se trata del monumento más visitado de la ciudad. Reconocible desde lejos por sus torres que se elevan hacia el cielo, cuenta con dos fachadas exteriores que impactan al visitante.
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Oceanogràfic</h2>
+            <span>11/21</span>
+          </div>
+          <img src="img/oceanografic.jpg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              El Oceanogràfic es un complejo obra  donde se representa los diferentes hábitats marinos. Alberga más de 45.000 ejemplares de unas 600 especies diferentes: como delfines, belugas, leones marinos, focas, pingüinos, tortugas, tiburones, rayas, además de reptiles y aves típicas de zonas húmedas.
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Islandia</h2>
+            <span>12/21</span>
+          </div>
+          <img src="img/islandia.jpeg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              Merece la pena visitarla en cualquier época del año, pero en invierno Islandia ofrece su gran atracción estelar, las auroras boreales, a las que se unen los baños al aire libre en aguas calientes, recorridos por sus lagos volcánicos, glaciares y fiordos...
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2><i>Colosseo</i></h2>
+            <span>01/2</span>
+          </div>
+          <img src="img/coliseo.jpg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              El Coliseo o Anfiteatro Flavio es un anfiteatro de la época del Imperio romano, construido en el siglo I. Está ubicado en el este del Foro Romano, y fue el más grande de los que se construyeron en el Imperio romano. Conocido originalmente como Anfiteatro Flavio (Amphitheatrum Flavium) pasa a ser llamado Coliseo (Colosseum) porque a su lado había una gran estatua, el Coloso de Nerón
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Alhambra (Granada)</h2>
+            <span>02/22</span>
+          </div>
+          <img src="img/alhambra.jpg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              La Alhambra es un complejo monumental sobre una ciudad palatina andalusí situado en Granada, España. Consiste en un conjunto de antiguos palacios, jardines y fortalezas (alcazaba, del árabe: القصبة al-qaṣbah ‘ciudadela’) inicialmente concebido para alojar al emir y la corte del Reino Nazarí, más tarde como residencia de los reyes de Castilla y de sus representantes. Su singularidad artística radica en los interiores de los palacios nazaríes, cuya decoración está entre las cumbres del arte andalusí, así como en su localización y adaptación, que generó un paisaje nuevo pero totalmente integrado con la naturaleza preexistente.
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Philadelphia Eagles</h2>
+            <span>02/22</span>
+          </div>
+          <img src="img/eagles.jpeg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>321 Likes</b></p>
+            <p class="card-text">
+              Igualdad máxima en la pelea por hacerse con el trofeo Vince Lombardi. Los Chiefs dieron la vuelta al partido y lograron con un gol de campo en los últimos segundos la ventaja final (38 - 35)
+            </p>
+          </div>
+        </div>
+        <div class="col-4 card my-5 mx-auto" style="height: auto">
+          <div
+            class="d-flex justify-content-md-between align-items-center flex-column flex-md-row  px-2 py-1">
+            <h2>Torre Eiffel</h2>
+            <span>04/22</span>
+          </div>
+          <img src="img/eiffel.jpg" alt="..." />
+          <div class="card-body">
+            <p class="card-text mb-1"><b>204 Likes</b></p>
+            <p class="card-text">
+              Ubicada en el extremo del Campo de Marte a la orilla del río Sena, la Torre Eiffel, símbolo de Francia y de su capital, es la estructura más alta de la ciudad. Con una altura de 300 metros, prolongada más tarde con una antena hasta los 324 metros, la torre Eiffel fue la estructura más elevada del mundo durante 41 años.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
